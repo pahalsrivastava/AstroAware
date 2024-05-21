@@ -6,6 +6,9 @@ from routes.image_processing import image_processing_bp
 
 app = Flask(__name__)
 
+#input few more modules for better deployment of features 
+
+app.register_blueprint(new_bp, url_prefix='/new')
 app.register_blueprint(events_bp, url_prefix='/events')
 app.register_blueprint(weather_bp, url_prefix='/weather')
 app.register_blueprint(image_processing_bp, url_prefix='/process-image')
