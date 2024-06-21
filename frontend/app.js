@@ -6,6 +6,8 @@ import EventScreen from './screens/EventScreen';
 import WeatherScreen from './screens/WeatherScreen';
 import ImageProcessingScreen from './screens/ImageProcessingScreen';
 
+'''create a new object here''' 
+
 const Tab = createBottomTabNavigator();
 
 export default function App() {
