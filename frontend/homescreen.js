@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
+'''enter other frontend development ideas'''
+
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
