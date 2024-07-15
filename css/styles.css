@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #0b3d91;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -14,13 +14,16 @@ body {
 }
 
 header {
-    background-color: #0a2e73;
+    background: rgba(10, 46, 115, 0.9);
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #ffffff;
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
 }
 
 main {
@@ -37,21 +40,35 @@ main {
     align-items: center;
     max-width: 800px;
     width: 100%;
-    background-color: #0a2e73;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background: rgba(10, 46, 115, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+#apod:hover {
+    transform: scale(1.02);
 }
 
 #apod-image-container {
     width: 100%;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 #apod-image {
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#apod-image:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
 #apod-content {
@@ -60,20 +77,24 @@ main {
 }
 
 #apod-title {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 #apod-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 footer {
-    background-color: #0a2e73;
+    background: rgba(10, 46, 115, 0.9);
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    border-top: 1px solid #ffffff;
 }
 
 footer p {
     font-size: 0.875rem;
+    letter-spacing: 1px;
 }
