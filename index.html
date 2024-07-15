@@ -2,16 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AstroAware - NASA APOD</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>NASA Astronomy Picture of the Day</h1>
-    <div id="apod">
-        <img id="apod-image" alt="Astronomy Picture of the Day">
-        <h2 id="apod-title"></h2>
-        <p id="apod-description"></p>
-    </div>
+    <header>
+        <h1>NASA Astronomy Picture of the Day</h1>
+    </header>
+    <main>
+        <div id="apod">
+            <div id="apod-image-container">
+                <img id="apod-image" alt="Astronomy Picture of the Day">
+            </div>
+            <div id="apod-content">
+                <h2 id="apod-title"></h2>
+                <p id="apod-description"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Powered by NASA's APOD API</p>
+    </footer>
     <script src="apod.js"></script>
 </body>
 </html>
